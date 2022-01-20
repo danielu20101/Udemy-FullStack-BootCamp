@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Making selector groups-->
     <style>
-        .blue{
+        small{
+            font-size: 75px;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
             color: blue;
         }
-        .uppercase{
-            text-transform: uppercase;
+        a:active{
+            color: red;
         }
-        h1{ color: whitesmoke;}
+        a:visited{
+            color: green;
+        }
+        h2, p, body{
+            color: red;
+        }
         body{
-            background-color: black
+            background-image: url("comsos.jpg");
+            background-size: cover;
         }
-        p{
-            background-color: darkmagenta;
+        h1{ 
+            color: rgba(red, green, blue, alpha);
+        }
+        #the-title{
+            text-decoration: underline;
         }
     </style>
     <title>HTML Document to be used for CSS</title>
 </head>
 <body>
-    <h1>This is an h1</h1>
+    <h1 class="small">This is an h1</h1>
     <h1>This is another </h1>
     <p>
         This is a paragraph with a black background for the body. We are using elements in order to do this. We have 
@@ -27,8 +43,9 @@
         paragraphs written will be modified based on the element selector which we are using. 
     </p>
     <!-- 86. Writing Class Selectors-->
-    <h1 class="blue uppercase">Select me</h1>
+    <h1 class="blue uppercase" id="the-title">Select me</h1>
     <div class="blue">Select me too</div>
     <p class="uppercase"> Don't select me. This option is not available</p>
+    <a href="https://www.facebook.com/">This is a link to Facebook which were are going to modify the color, active state, hover state, and visited status</a>
 </body>
 </html>
